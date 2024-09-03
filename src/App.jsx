@@ -14,7 +14,7 @@ function App() {
     const todo = JSON.parse(localStorage.getItem("todo"));
     const theme = JSON.parse(localStorage.getItem("theme"));
     console.log(todo)
-    if (theme === "dark" || todo.length>0) {
+    if (todo && todo.length>0) {
       setTodo(todo);
       setTheme(theme);
     }
