@@ -7,11 +7,11 @@ const TodoProvider=({children})=>{
 
     const [theme, setTheme] = useState('light')
     const [todo,setTodo]= useState([
-        // { 
-        //     id:1,
-        //     title:"todo",
-        //     complete:false
-        // }
+        { 
+            id:1,
+            title:"learn DSA",
+            complete:false
+        }
     ]);
     // const [complete, setCompete] =useState(false);
     
