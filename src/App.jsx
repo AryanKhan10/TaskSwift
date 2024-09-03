@@ -10,27 +10,27 @@ function App() {
   // console.log(todo)
 
   //reload krne pe hi local storage se get kare LS se or todo array mai set kare
-  useEffect(()=>{
-    const todo = JSON.parse(localStorage.getItem("todo"));
-    const theme = JSON.parse(localStorage.getItem("theme"));
-    console.log(todo)
-    if (theme === "dark" || todo.length>0) {
-      setTodo(todo);
-      setTheme(theme);
-    }
-    else{
-      localStorage.setItem("todo", JSON.stringify(todo))
-   localStorage.setItem("theme", JSON.stringify(theme))
-    }
+  // useEffect(()=>{
+  //   const todo = JSON.parse(localStorage.getItem("todo"));
+  //   const theme = JSON.parse(localStorage.getItem("theme"));
+  //   console.log(todo)
+  //   if (theme === "dark" || todo.length>0) {
+  //     setTodo(todo);
+  //     setTheme(theme);
+  //   }
+  //   else{
+  //     localStorage.setItem("todo", JSON.stringify(todo))
+  //  localStorage.setItem("theme", JSON.stringify(theme))
+  //   }
     
-  },[])
+  // },[])
   
-  // LS mai store kare jb todo change ho
-  useEffect(()=>{
-   localStorage.setItem("todo", JSON.stringify(todo))
-   localStorage.setItem("theme", JSON.stringify(theme))
+  // // LS mai store kare jb todo change ho
+  // useEffect(()=>{
+  //  localStorage.setItem("todo", JSON.stringify(todo))
+  //  localStorage.setItem("theme", JSON.stringify(theme))
 
-  },[todo,theme])
+  // },[todo,theme])
   return (
 
     <div className='mt-20'>
